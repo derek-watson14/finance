@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete Account
+{% endblock %}
+
+{% block main %}
+    <h3 class="mb-3">Confirm Account Deletion</h3>
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-1">
+            <p class="bg-light p-3">Please confirm you wish to delete your account. Upon clicking the button below your account and all data associated with it will be removed from the server.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form class="form-group" action="/delete" method="post">
+                <button class="btn btn-lg btn-danger" type="submit">Delete Account</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

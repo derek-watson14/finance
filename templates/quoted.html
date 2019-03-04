@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ symbol }} Price
+{% endblock %}
+
+{% block main %}
+    <h2 class="mb-3">{{ symbol }}: {{ price }}</h2>
+    <a class="btn btn-primary" href="buy" role="button">Buy Stock</a>
+    <a class="btn btn-primary" href="quote" role="button">New Lookup</a>
+{% endblock %}
